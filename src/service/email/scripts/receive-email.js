@@ -1,14 +1,15 @@
-(function() {
+//Inicialização do email.js
+(()=> {
     emailjs.init({
-        publicKey: "oFxQSa31QMcD-3UX7",
+        publicKey: "dOaQAzj10moEoquKR",
     })
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault()
+    e.preventDefault() //Função que eu cancelo no meio do caminho
 
 
-    emailjs.sendForm("service_y960qy4", "template_re5j3nu", this)
+    emailjs.sendForm("service_h533kzn", "template_4gh1otn", this)
     .then(
         function() {
             console.log("success!")
